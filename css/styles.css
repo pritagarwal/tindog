@@ -1,65 +1,63 @@
 
+html{
+    scroll-behavior:smooth;
+}
 body{
     font-family:'Montserrat', sans-serif; 
+    text-align:center;
 }
 
-/* Title Section  CSS*/
-
-#title{
-    background-color: #ff4c68;
-    color:white;
-} 
-.container-fluid{
-    padding:3% 15% 5%;
-}
-
- h1{
-    font-family:'Montserrat', sans-serif; 
-    font-size:3.5rem;
-    font-weight:900; 
-    line-height:1.5;
-}
-#testimonials h2{
-    font-family:'Montserrat', sans-serif; 
-    font-size:3rem;
-    font-weight:700; 
-    line-height:1.5;
-    color:#fff;
-}
-
-
-#pricing h1{
-    font-family:'Montserrat', sans-serif; 
-    font-size:2rem;
-    font-weight:700; 
-    line-height:1.5;
-}
-#pricing h2{
-    font-family:'Montserrat', sans-serif; 
-    font-size:2.5rem;
-    font-weight:700; 
-    line-height:1.5;
-}
-
-h3{
-    font-family:'Montserrat', sans-serif; 
-    font-size:1.5rem;
-    font-weight:700; 
-}
-#cta h3{
-    font-family:'Montserrat', sans-serif; 
-    font-size:3rem;
-    font-weight:700; 
-}
- 
 p{
     color:#8f8f8f;
 }
 
+/* Containers */
+
+.container-fluid{
+    padding:7% 12%;
+}
+
+/* Sections */
+
+.color-section{
+    background-color: #ff4c68;
+    color:white;
+}
+
+.white-section{
+    background-color:#fff;
+}
+
+/* Heading */
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Montserrat', sans-serif; 
+}
+
+.big-heading{
+    font-size:3.5rem;
+    font-weight:900; 
+    line-height:1.5;
+   
+}
+
+.pricing-heading{
+    font-size:2.5rem;
+    line-height: 1.5;
+    font-weight:700;
+}
+
+.cta-heading{ 
+    font-size:3rem;
+    line-height: 1.5;
+    font-weight:700; 
+}
+
+
 /* Navigation Bar */
 
 .navbar{
-    padding-bottom:4.5rem;
+    padding:0 0 4.5rem;
 }
 
 .navbar-brand{
@@ -76,6 +74,15 @@ p{
 
 }
 
+/* Title Section  CSS*/
+#title{
+    text-align:left;
+}
+
+#title .container-fluid{
+    padding:3% 15% 5%;
+}
+
 /* Title Button */
 
 .download-button{
@@ -86,9 +93,8 @@ p{
 
 .title-div{
     position:relative;
-   
-
 }
+
 .title-img{
     width:60%;
     transform:rotate(25deg);
@@ -101,13 +107,14 @@ p{
 
 #features{
     position:relative;
-    padding: 7%  12%;
-    background-color:#fff;
-   
+}
+
+.feature-title{
+    font-size:1.5rem;
+    font-weight:700;
 }
 
  .feature-box{
-    text-align:center;
     padding:2%;
 } 
 
@@ -123,12 +130,13 @@ p{
 /* Testimonial Section */
 
 #testimonials{
-    text-align:center;
     background-color:#ef8172;
 }
 
-.carousel-item{
-    padding: 7%  12%;
+.testimonial-text{
+    font-size:3rem;
+    font-weight:700; 
+    line-height:1.5;
 }
 
 .testimonial-image{
@@ -139,7 +147,6 @@ p{
 
 #press{
     background-color:#ef8172;
-    text-align:center;
     padding-bottom: 3%;
 }
 
@@ -148,13 +155,22 @@ p{
     margin :20px 25px 50px;
 }
 
-/*Pricing CSS */
+/*Pricing CSS */ 
 
 #pricing{
     padding: 7%  12%;
-    text-align:center;
 }
 
+.pricing-text{
+    font-size:2rem;
+    font-weight:700; 
+    line-height:1.5;
+}
+#pricing h3{
+  
+    font-size:1.5rem;
+    font-weight:700; 
+}
 .pricing-col{
     padding: 3% 2%;
 }
@@ -164,19 +180,20 @@ p{
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 /* Call to Action CSS */
-#cta{
-    background-color: #ff4c68;
-    color:white;
-    text-align: center;
-    padding: 5% 17% 5%;
+
+
+/* Footer Section css */
+
+.social-icon{
+    margin:20px 10px;
 }
 
 /* Media Queries */
-@media only screen and (max-width:1035px){
- 
-    #title{
-        text-align:center;
-    }
+
+@media only screen and (max-width: 1035px){
+#title {
+    text-align: center;
+}
     .title-img{
         position:static;
         transform: rotate(0);
