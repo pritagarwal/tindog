@@ -46,6 +46,11 @@ h3{
     font-size:1.5rem;
     font-weight:700; 
 }
+#cta h3{
+    font-family:'Montserrat', sans-serif; 
+    font-size:3rem;
+    font-weight:700; 
+}
  
 p{
     color:#8f8f8f;
@@ -157,4 +162,23 @@ p{
 .card{
     border-radius: .3rem;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+/* Call to Action CSS */
+#cta{
+    background-color: #ff4c68;
+    color:white;
+    text-align: center;
+    padding: 5% 17% 5%;
+}
+
+/* Media Queries */
+@media only screen and (max-width:1035px){
+ 
+    #title{
+        text-align:center;
+    }
+    .title-img{
+        position:static;
+        transform: rotate(0);
+    }
 }
